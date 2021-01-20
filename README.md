@@ -66,3 +66,34 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
 
 
+<hr>
+
+# installation note by Javonnii Curry
+
+```bash
+pip install awscli
+
+aws configure
+
+# for autocompletion with conda install in the path
+brew install zsh-completions
+autoload -Uz compinit
+compinit
+
+# Press y when asked to ignore insecure directories
+
+# Then to test things out run the initialization:
+autoload bashcompinit && bashcompinit
+source /usr/local/bin/aws_zsh_completer.sh
+
+
+#you can type aws followed by a space and gla and tab and it should pause a bit and complete to the glacier command instead of file completion:
+
+aws gla  --> should autocomplete to glacier
+
+
+# side note put this at the bout of your .zshrc shell file
+
+export PATH="/Users/javonnii/opt/anaconda3/bin/aws_zsh_completer.sh:$PATH"
+autoload bashcompinit && bashcompinit
+```

@@ -72,8 +72,14 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 ```bash
 pip install awscli
+aws --version
 
+# setup the configuration: you need csv file with keys from IAM
 aws configure
+AWS Access Key ID [None]: <your access key>
+AWS Secret Access Key [None]: <your secret key>
+Default region name [None]: us-east-1
+Default output format [None]: json
 
 # for autocompletion with conda install in the path
 brew install zsh-completions

@@ -100,6 +100,8 @@ aws gla  --> should autocomplete to glacier
 
 # side note put this at the bout of your .zshrc shell file
 
-export PATH="/Users/javonnii/opt/anaconda3/bin/aws_zsh_completer.sh:$PATH"
+autoload -Uz compinit
+compinit
 autoload bashcompinit && bashcompinit
+source /Users/javonnii/opt/anaconda3/bin/aws_zsh_completer.sh 
 ```
